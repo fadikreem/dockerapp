@@ -20,5 +20,5 @@ deployment:
       - docker login -e fadi.kreem@hotmail.com  -u fadikreem1 -p fadi1987
       - docker tag dockerapp_dockerapp fadikreem1/dockerapp:fadikreem
       - docker tag dockerapp_dockerapp fadikreem1/dockerapp:latest
-      - docker push fadikreem1/dockerapp:$CIRCLE_SHA1
+      - docker push fadikreem1/dockerapp:fadikreem
       - docker push fadikreem1/dockerapp:latest
