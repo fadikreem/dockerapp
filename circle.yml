@@ -17,7 +17,7 @@ deployment:
   hub: [circle_ci_fadi,master]
   commands:
     - docker login -e $DOCKER_HUB_EMAIL -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
-    - docker tag dokcerapp_dockerapp $DOCKER_HUB_USER_ID/dockerapp:fadi_new
-    - docker tag dokcerapp_dockerapp $DOCKER_HUB_USER_ID/dockerapp:fadi_123
+    - docker tag dockerapp_dockerapp $DOCKER_HUB_USER_ID/dockerapp:fadi_new
+    - docker tag dockerapp_dockerapp $DOCKER_HUB_USER_ID/dockerapp:fadi_123
     - docker push $DOCKER_HUB_USER_ID/dockerapp:fadi_new
     - docker push $DOCKER_HUB_USER_ID/dockerapp:fadi_123
