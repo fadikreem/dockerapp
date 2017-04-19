@@ -17,7 +17,7 @@ deployment:
   hub:
     branch: /.*/
     commands:
-      - docker login -e fadikreem@hotmail.com -u fadikreem1 -p fadi1987
+      - docker login -e fadi.kreem@hotmail.com -u fadikreem1 -p fadi1987
       - docker tag dockerapp_dockerapp fadikreem1/dockerapp:$CIRCLE_SHA1
       - docker tag dockerapp_dockerapp fadikreem1/dockerapp:latest
       - docker push fadikreem1/dockerapp:fadikreem
