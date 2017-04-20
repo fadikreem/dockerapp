@@ -1,0 +1,9 @@
+version: '2'
+services:
+  dockerapp:
+    image: fadikreem1/dockerapp
+    ports:
+      - "8080:5000"
+    
+  redis:
+    image: redis:3.2.0
